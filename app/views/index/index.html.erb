@@ -1,11 +1,32 @@
-<% @index.each do |menegement| %>
-<%= menegement.year %>
-<%= menegement.month %>
-<%= menegement.income %>
-<%= menegement.takehome %>
-<%= menegement.consumption %>
-<%= menegement.takehome - menegement.consumption %>
-<%= link_to '削除', index_path(menegement.id), method: :delete %>
-<br>
-<% end %>
+<table>
+  <tr>
+    <td>年</td>
+    <td>月</td>
+    <td>月収</td>
+    <td>手取り</td>
+    <td>消費</td>
+    <td>手残り</td>
+    <td>削除</td>
+  </tr>
+   <% @index.each do |menegement| %>
+  <tr>
+    <td><%= menegement.year %></td>
+    <td><%= menegement.month %></td>
+    <td><%= menegement.income %></td>
+    <td><%= menegement.takehome %></td>
+    <td><%= menegement.consumption %></td>
+    <td><%= menegement.takehome - menegement.consumption %></td>
+    <td><%= link_to '削除', index_path(menegement.id), method: :delete %></td>
+  </tr>
+ <% end %>
+   <tr>
+    <td></td>
+    <td>合計</td>
+    <td>Javascript</td>
+    <td>Javascript</td>
+    <td>Javascript</td>
+    <td>Javascript</td>
+    <td></td>
+  </tr>
+</table>
 <%= render "form" %>

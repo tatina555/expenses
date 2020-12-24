@@ -1,0 +1,10 @@
+table {
+  table-layout:fixed;
+  border-collapse:  collapse;     /* セルの線を重ねる */
+}
+
+td{
+  width: 100px;
+  border: solid 1px;
+  text-align: center;
+}
