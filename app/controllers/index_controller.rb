@@ -1,6 +1,6 @@
 class IndexController < ApplicationController
   def index
-    @index = Manegement.all.order(id:"DESC")
+    @index = Manegement.all.order(year:"DESC", month:"DESC")
   end
 
   def create
