@@ -5,6 +5,7 @@
 <%= menegement.takehome %>
 <%= menegement.consumption %>
 <%= menegement.takehome - menegement.consumption %>
+<%= link_to '削除', index_path(menegement.id), method: :delete %>
 <br>
 <% end %>
 <%= render "form" %>

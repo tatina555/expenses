@@ -13,6 +13,12 @@ class IndexController < ApplicationController
     end
   end
 
+  def destroy
+    @index = Manegement.find(params[:id])
+    @index.destroy
+    redirect_to root_path
+  end
+
 end
 
 private
