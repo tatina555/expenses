@@ -1,2 +1,7 @@
-<p>aaa</p>
+<% @index.each do |menegement| %>
+<%= menegement.income %>
+<%= menegement.takehome %>
+<%= menegement.consumption %>
+<br>
+<% end %>
 <%= render "form" %>

@@ -1,1 +1,6 @@
-<p>form</p>
+  <%= form_with url: "/index", class: 'form', local: true do |f| %>
+  <%= f.text_field :income, class: 'form-message', placeholder: '月収（額面）' %>
+  <%= f.text_field :takehome, class: 'form-message', placeholder: '月収（手取り）' %>
+  <%= f.text_field :consumption, class: 'form-message', placeholder: '消費額' %>
+  <%= f.submit '送信', class: 'form-submit' %>
+<% end %>
