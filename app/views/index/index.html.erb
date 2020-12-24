@@ -10,12 +10,12 @@
   </tr>
    <% @index.each do |menegement| %>
   <tr>
-    <td><%= menegement.year %></td>
-    <td><%= menegement.month %></td>
-    <td><%= menegement.income %></td>
-    <td><%= menegement.takehome %></td>
-    <td><%= menegement.consumption %></td>
-    <td><%= menegement.takehome - menegement.consumption %></td>
+    <td class = str><%= menegement.year %></td>
+    <td class = strs><%= menegement.month %></td>
+    <td class = strss><%= menegement.income %></td>
+    <td class = strsss><%= menegement.takehome %></td>
+    <td class = strssss><%= menegement.consumption %></td>
+    <td class = strsssss><%= menegement.takehome - menegement.consumption %></td>
     <td><%= link_to '削除', index_path(menegement.id), method: :delete %></td>
   </tr>
  <% end %>
@@ -30,3 +30,5 @@
   </tr>
 </table>
 <%= render "form" %>
+
+<div class = aaa>いいい</div>
