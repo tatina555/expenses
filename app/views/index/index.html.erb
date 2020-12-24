@@ -1,7 +1,10 @@
 <% @index.each do |menegement| %>
+<%= menegement.year %>
+<%= menegement.month %>
 <%= menegement.income %>
 <%= menegement.takehome %>
 <%= menegement.consumption %>
+<%= menegement.takehome - menegement.consumption %>
 <br>
 <% end %>
 <%= render "form" %>

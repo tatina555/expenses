@@ -18,5 +18,5 @@ end
 private
 
 def prototype_params
-  params.permit(:income, :takehome, :consumption)
+  params.permit(:year, :month, :income, :takehome, :consumption)
 end
